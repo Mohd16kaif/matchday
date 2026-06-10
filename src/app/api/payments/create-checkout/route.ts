@@ -37,7 +37,6 @@ export async function POST(request: NextRequest) {
       customer: {
         email: user.email!,
         name: profile?.display_name ?? 'Matchday User',
-        create_new_customer: false,
       },
       product_cart: [
         {
