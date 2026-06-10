@@ -25,6 +25,9 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Already Pro' }, { status: 400 })
   }
 
+
+  
+
   try {
     const payment = await client.payments.create({
       billing: {
